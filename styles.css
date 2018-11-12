@@ -1,0 +1,123 @@
+body{
+	background-color: rgb(151,151,255) ; //blue
+	font-family: Didot, serif;
+	font-size:18px;
+	padding:2%;
+}
+div{
+	background-color: rgb(255,231,232);
+	color: rgb(151,47,153);
+
+}
+span{
+	display:block;
+	border-bottom:rgb(54,45,100) 1px solid ; 
+	padding: 2%;
+	font-size: 30px;
+}
+
+#name{
+	padding: 10% 10% 10% 13%;
+	margin: 8% 14% 8% 14%;
+	font-size: 30px;
+	background-color: pink;
+	color: rgb(151,47,153);
+	border: rgb(54,45,100) 5px double ;
+}
+
+.text{
+	height: 30px;
+	font-size: 15pt;
+	color: black;
+	font-weight: normal;
+
+}
+
+#message{
+
+}
+
+button{
+	font-size: 20px;
+	background-color:rgb(255,200,227)  ;
+	border-color: white;
+	color:rgb(151,47,153); 
+	border-radius: 5px;
+	cursor: hand;
+
+}
+
+button:hover{
+	cursor: pointer;
+	color:rgba(151,47,153,0.9);
+	background-color: rgba(151,151,255,0.7);
+	font-weight: bold;
+}
+
+button.next{
+
+	font-size: 30px;
+	font-weight: bold;
+	border-style: outset;
+	
+}
+input: focus{
+	background-color: white;
+}
+
+#window{
+	border: rgb(54,45,100) 5px double ;
+	border-radius: 2px;
+	padding:2%;
+	margin:2% 10% 2% 10%;
+	height: 500px;
+		
+}
+
+#panel{
+	margin-top: 22px;
+	margin-right:10px;
+	border: pink 1px solid ;
+	border-radius: 2px;
+	float:left;
+	height: 487px;
+	display:block;
+
+}
+
+
+#output{
+
+	overflow: auto;
+	height:380px;
+	display: block;
+	border: pink 1px solid;
+	padding:10px;
+	box-shadow: 2px 2px 10px violet;
+	background:linear-gradient(rgba(255,200,227,0.0), pink 95%);
+
+}
+#text-space{
+	border:pink 1px solid;
+	text-align: center;
+	height: 50px;
+	margin: 10px 0px 10px 150px;
+	padding: 10px;
+	border-radius: 2px;
+
+	background:linear-gradient(rgba(255,200,227,0.0), pink 95%);
+}
+#online p{
+	font-size: 20px;
+}
+#online{
+	padding: 1%;
+	padding-left: 6%;
+}
+
+ul li{
+	list-style: none;
+	display:block;
+	width: 100px;
+}
+

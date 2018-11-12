@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>start</title>
+	<!-- <link rel="shortcut icon" href="icon.ico"> -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script> -->
+
+</head>
+
+<body>
+	<div id="name">
+		<form class="form">
+			<label for="user-name">Enter a user name</label>
+			<br>
+			<input  type="text" name="username" id="user-name" class="text" width="250" placeholder="within 7 characters"  required>
+			<br>
+
+		</form>
+		<br>
+		<button class="next"> Take me to a chat room</button>
+	</div>
+
+	<!--  <script src="./proceed.js"></script> --> 
+
+</body>
+<script>
+
+var btn = document.querySelector('.next');
+var box = document.getElementById('user-name'); 
+
+var goNext = function() {
+	var txt = box.value;
+	localStorage.setItem('userName',txt);
+	//check if user name is valid.
+	
+	//go to another page = './chat.html'
+	location.href="chat.html";
+
+};
+
+	btn.addEventListener('click', function() {
+		goNext();
+	});
+
+	box.addEventListener('keypress', function(e) {
+		if((e.keyCode || e.which) == 13) {
+			e.preventDefault();
+			console.log('you hit enter');
+				goNext();
+		}
+	});
+	
+
+</script>
+</html>

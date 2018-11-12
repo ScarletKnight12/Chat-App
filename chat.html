@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My chat app</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+</head>
+
+<body>
+	<div id="window">
+		<div id="panel">
+			<span id="u-name">username</span> <br>
+		<!--	<button class="chat-type">GLOBAL</button> <br>
+			<button class="chat-type">PRIVATE</button> <br> -->
+		
+			<div id="online">
+				<p>Online</p>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<div id="output">
+			<div id="out"></div>
+			<div id="feedback"></div>
+		</div>
+		
+		<div id="text-space">
+				<label for="message">Type text&nbsp:&nbsp </label>
+				<input type="text" name="" id="message" size="40" class="text"> &nbsp
+				<button id="send">Send</button>
+
+		</div>
+
+	</div>
+
+<script src = "chat.js"></script>
+</body>
+</html>
